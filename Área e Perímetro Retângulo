@@ -1,0 +1,17 @@
+def main():
+
+   b = int(input(""))
+
+   h = int(input(""))
+
+   area = b*h
+
+   print("Area: ", area)
+
+   perimetro = (b*2) + (h*2)
+
+   print("Perimetro: ", perimetro)
+
+
+main()
+#created by DamiãoJR
