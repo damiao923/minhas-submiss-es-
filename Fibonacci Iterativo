@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class Principal {
+    public static void main(String[] args) { 
+        Scanner sky = new Scanner(System.in);
+        int numeroMeta = sky.nextInt();
+        int x = 0;
+        int y = 1; 
+        
+        while(true){ 
+         if(numeroMeta == 0){
+          System.out.println("0");
+          System.exit(0);
+         }else if(numeroMeta == 1){ 
+          System.out.println("0"); 
+          System.out.println("1");
+          System.exit(0);
+         } 
+          System.out.println("0"); 
+          System.out.println("1");
+         while(true){
+         int z = x+y;
+         System.out.println(x + y); 
+         x = y; 
+         y = z;
+         if(z >= numeroMeta){
+          System.exit(0);
+          }
+         }
+       }
+    }
+}
