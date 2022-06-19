@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Principal {
+    public static void main(String[]args){
+      Scanner sky = new Scanner(System.in);
+      int number1 = sky.nextInt();
+      int number2 = sky.nextInt(); 
+      
+      int imparPar = 0;
+      for(int i = number1; i<=number2; i++){
+        if(i == 2){
+         System.out.print("2 ");
+        }
+        if(i != 1 && i != 2){
+        for(int parOuImpar = 2; parOuImpar<i; parOuImpar++){     
+         if(i%parOuImpar == 0){
+          imparPar += 1;
+         }
+        }
+          if(i != 2 && imparPar == 0){
+           System.out.print(i + " ");
+          }
+          imparPar = 0;
+      }
+        }
+ }
+}
