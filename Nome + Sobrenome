@@ -1,0 +1,11 @@
+ import java.util.Scanner;
+ 
+ class Principal {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+            String nome = teclado.next();
+            String sobrenome = teclado .next();
+        System.out.println("Nome Completo: " + nome + sobrenome);
+ 
+    }
+}
