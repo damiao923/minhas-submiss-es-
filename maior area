@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Principal {
+    public static void main(String[]args) {
+        Scanner sky = new Scanner(System.in);
+        float L1 = sky.nextFloat();
+        float A1 = sky.nextFloat();
+        float R1 = L1*A1;
+        
+        float L2 = sky.nextFloat();
+        float A2 = sky.nextFloat();
+        float R2 = L2*A2;
+        
+        if(R1 < R2) {
+            System.out.print("Segundo");
+        } if(R2 < R1) {
+            System.out.print("Primeiro");
+        } if(R2 == R1) {
+            System.out.print("Empate");
+        }
+        
+        
+    }
+}
