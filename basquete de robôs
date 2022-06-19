@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Principal {
+    public static void main(String[]args) { 
+        Scanner sky = new Scanner(System.in);
+        
+        int D = sky.nextInt();
+        
+        if(0 < D && D <= 800) {
+            System.out.print("1");
+        } if(800 < D && D <= 1400) {
+            System.out.print("2");
+        } if(1400 < D && D <= 2000) {
+            System.out.print("3");
+        }
+   }
+}
