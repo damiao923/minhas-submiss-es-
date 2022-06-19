@@ -1,0 +1,62 @@
+def contem(v, n):
+    encontrado = False 
+    ind = 0
+    while ind < len(v):
+        if v[ind] == n:
+            encontrado = True
+        ind += 1
+    return encontrado    
+
+def seguinteFeliz(n):
+    soma = 0
+    while n > 0:
+        digito = n % 10
+        soma += digito **2
+        n //= 10
+    return soma
+
+
+def buscar (v, n):
+    encontrado = False
+    ind = 0 
+    while ind < len(v) and not(encontrado):
+        if v[ind] == n:
+            encontrado = True
+        else:
+            ind += 1
+
+    if encontrado:
+        return ind
+    else:
+        return -1            
+def subVetor (v, inicio, final):
+    w = []
+    ind = inicio
+    while ind < final:
+        w.append(v[ind])
+        ind += 1
+    return w    
+
+
+
+numOrg = int(input())
+sequencia = []
+num = numOrg
+
+
+while not contem(sequencia, num):
+
+    sequencia.append(num)
+    sig = seguinteFeliz(num)
+    num = sig 
+
+   
+sitio = buscar(sequencia, num)
+
+
+if sitio == len(sequencia) - 1:
+    print("=)")
+else:
+    print("=(")
+    
+    #Created By DamiãoJR
