@@ -1,0 +1,11 @@
+Lista = list()
+for c in range(int(input())):
+    n = int(input())
+    if n == 0:
+        if len(Lista) > 0:
+            Lista.pop()
+    else:
+        Lista.append(n)
+
+print(sum(Lista))
+#Created By DamiãoJR
