@@ -1,0 +1,5 @@
+altura = int(input())
+base = int(input())
+area = (base * altura)/2
+print(int(area))
+#created by DamiaoJR
