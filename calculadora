@@ -1,0 +1,21 @@
+import java.util.Scanner; 
+class Principal {
+    public static void main (String[]args)  { 
+        Scanner sky = new Scanner(System.in); 
+        int a = sky.nextInt(); 
+        int b = sky.nextInt();
+        char c = sky.next().charAt(0);
+        if(c == '+') {
+            System.out.print(a+b);
+        }else if(c == '-') {
+            System.out.print(a-b);
+        }else if(c == '*') { 
+            System.out.print(a*b);
+        }else if(c == '/' && b!=0) { 
+            System.out.print(a/b);
+        }else { 
+            System.out.print("Erro");
+        } 
+    } 
+}
+//created by DamiãoJR
