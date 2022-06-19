@@ -1,0 +1,36 @@
+import java.util.Scanner; 
+ 
+class Principal {
+    public static void main(String[] args) {
+        Scanner sky = new Scanner(System.in);
+        int numero = sky.nextInt(); 
+        
+        int numeroDividido = numero; 
+        int tamanhoDoVetor = 0; 
+        
+        
+        while(true){
+        numeroDividido = numeroDividido/2;
+        tamanhoDoVetor += 1; 
+        if(numeroDividido == 0){
+          break;
+         }
+        }
+        
+        int vetor[] = new int[tamanhoDoVetor]; 
+        
+        int numeroD = numero;
+        
+        for(int i=1; i<=tamanhoDoVetor; i++){
+         vetor[i-1] = numeroD%2; 
+         numeroD = numeroD/2;
+        }
+        
+        int binario[] = new int[tamanhoDoVetor];
+        
+        for(int i=1; i<=tamanhoDoVetor; i++){
+         binario[i-1] = vetor[tamanhoDoVetor-i]; 
+         System.out.print(binario[i-1]);
+        }   
+    }
+}
