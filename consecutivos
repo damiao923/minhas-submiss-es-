@@ -1,0 +1,13 @@
+num = input()
+valores = input().split()
+contador = []
+maior_valor = 0
+for i in valores:
+    if i not in contador:
+        contador.clear()
+        contador.append(i)
+    else:
+        contador.append(i)
+    if len(contador) > maior_valor:
+        maior_valor = len(contador)
+print(maior_valor)
