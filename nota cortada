@@ -1,0 +1,17 @@
+B = int(input())
+T = int(input())
+
+altura = 70;
+base = abs(B-T);
+triangulo = (base*altura)/2
+
+retangulo = min(B,T)*altura;
+felix = triangulo+retangulo;
+
+if felix > 5600:
+    print('1')
+elif felix < 5600:
+    print('2')
+else:
+    print('0')
+    #Created By DamiãoJR
