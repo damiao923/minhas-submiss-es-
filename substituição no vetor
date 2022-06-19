@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Principal {
+    public static void main(String [] args) {
+        Scanner teclado = new Scanner(System.in);
+        int n1 = teclado.nextInt();
+        int n2 = teclado.nextInt();
+        int n3 = teclado.nextInt();
+        int n4 = teclado.nextInt();
+        int n5 = teclado.nextInt();
+        int n6 = teclado.nextInt();
+        int n7 = teclado.nextInt(); 
+        int n8 = teclado.nextInt();
+        int n9 = teclado.nextInt();
+        int n10 = teclado.nextInt();
+        int[] dados = new int[]{n1, n2, n3, n4, n5, n6, n7, n8, n9, n10};
+        int[] u = new int[]{n1, n2, n3, n4, n5, n6, n7, n8, n9, n10};
+        Arrays.sort(u);
+        int menorNumero = u[0]; 
+        System.out.println("Menor: " + menorNumero);
+        System.out.print("Ocorrencias : ");
+        for(int i = 0; i < 10; i++) {
+            if(dados[i] == menorNumero) {
+                System.out.print(i + " ");
+                dados[i] = -1;
+                }
+            }
+        System.out.println("");
+        for(int i = 0; i < 10; i++) {
+            System.out.print(dados[i] + " ");
+            }
+     }
+}
