@@ -1,0 +1,5 @@
+lado = int(input(''))
+area = lado * lado
+peri = lado * 4
+print('Area:',area)
+print('Perimetro:',peri)
