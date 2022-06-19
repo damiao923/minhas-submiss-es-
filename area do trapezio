@@ -1,0 +1,9 @@
+bmaior=float(input())
+ 
+bmenor=float(input())
+ 
+h = float(input())
+ 
+area=((bmaior+bmenor)*h)/2
+ 
+print(int(area))
